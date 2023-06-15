@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        interactive_canvas.cpp
         ${TS_FILES}
 )
 

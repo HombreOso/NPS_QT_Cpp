@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "interactive_canvas.cpp"
 
 #include <QApplication>
 #include <QLocale>
@@ -17,7 +18,10 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    MainWindow w;
-    w.show();
+    QMainWindow mainWindow;
+    Canvas *canvas = new Canvas(&mainWindow);
+    mainWindow.setCentralWidget(canvas);
+    mainWindow.setGeometry(100, 100, 800, 600);
+    mainWindow.show();
     return a.exec();
 }

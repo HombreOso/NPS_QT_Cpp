@@ -16,7 +16,7 @@ protected:
         QPainter painter(this);
         painter.drawImage(0, 0, stackImages[currentImageIndex]);
         painter.drawImage(0, 0, canvasImage);
-        painter.setPen(QPen(Qt::red, 2));
+        painter.setPen(QPen(Qt::blue, 2));
         painter.drawRect(currentRect);
     }
 
